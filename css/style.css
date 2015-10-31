@@ -62,6 +62,8 @@ footer {
 
 .container{
     margin: 0 auto;
+    width: 70%;
+    height: 400px;
     background: rgba(255, 255, 255, 0.4) ;
 /*    background-image: url("images/blurred-home-bg.jpg");
 	background-repeat: repeat;
