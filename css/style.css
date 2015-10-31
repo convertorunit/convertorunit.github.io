@@ -8,7 +8,7 @@ a {
 
 body {
 	background-image: url("images/bg.jpg");
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size: auto, 100% 100%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
@@ -100,7 +100,7 @@ footer {
     margin-bottom: 5px;
     font-family:  'Ubuntu', sans-serif;
     font-size:  18px;
-    width: 80%;
+    width: 90%;
 }
 .container table  tr td  input{
     /*ine-height: 40px;*/
