@@ -91,21 +91,23 @@ footer {
 }
 
 .container table select{
-   line-height: 40px;
-   padding:5px;
+   /*line-height: 40px;*/
+   padding:10px;
    margin:5px;
    font-family:  'Ubuntu', sans-serif;
    font-size:  20px;
 
 }
 .container table input{
-   line-height: 40px;
+   /*ine-height: 40px;*/
+   padding:10px;
    margin:5px;
    font-family:  'Ubuntu', sans-serif;
    font-size:  20px;
     width: 25%;
     min-width: 150px;
     max-width: 250px;
+    background-color: rgba(255, 255, 255, 0.4) ;
 }
 
 
