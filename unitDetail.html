@@ -1,6 +1,6 @@
 <!-- <h1>{{unittype}}</h1> -->
 <div class="container">
-	<table width="450">
+	<table width="470">
 		<tr >
 			<td width="200">
 				<select ng-model="unitSelected0" 
@@ -11,7 +11,7 @@
 			<td width="200">
 				<input type="text" ng-model="unitValue0" ng-change="valueChange(unitValue0,unitSelected0.toStandard)">
 			</td >
-			<td  width="50" ng-repeat="unit in units | filter : unitSelected0 : true ">
+			<td  width="70" ng-repeat="unit in units | filter : unitSelected0 : true ">
           		{{unit.short}}
 			</td>
 		</tr>
