@@ -79,7 +79,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
     padding-top: 30px; 
-    width: 50%;
+    width: 450px;
 /*    min-width: 300px;
     max-width: 500px;*/
 }
@@ -88,7 +88,7 @@ footer {
     /*line-height: 40px;*/ 
     font-family: 'Ubuntu', sans-serif;
     font-size:  20px;
-    width: 450px;
+    
 }
 
 .container table tr td select{
