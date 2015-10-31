@@ -35,16 +35,17 @@ footer {
 .navigation ul {
     list-style:none;
     line-height: 50px;
+    min-width: 500px;
     color: #1FC4FA;
-    font-size:16px;
+    font-size:20px;
     text-align: center;
 }
 
 .navigation ul li {
     display:inline;
     position: relative; 
-    padding:10px;
-
+    padding:5px;
+    margin:5px;
  
 }
 .navigation ul li a{
@@ -63,7 +64,9 @@ footer {
 .container{
     margin: 0 auto;
     width: 70%;
-    height: 400px;
+    min-width: 500px;
+    max-width: 700px;
+    height: 300px;
     background: rgba(255, 255, 255, 0.4) ;
 /*    background-image: url("images/blurred-home-bg.jpg");
 	background-repeat: repeat;
@@ -72,27 +75,36 @@ footer {
 }
 
 .container table{
-    margin: 0 auto;
+    
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px; 
+    width: 50%;
+/*    min-width: 300px;
+    max-width: 500px;*/
 }
 
 .container table tr{
-   line-height: 50px;
-   font-family:  'Ubuntu', sans-serif;
-   font-size:  24px;
-
+   /*line-height: 40px;*/ 
+   font-family: 'Ubuntu', sans-serif;
+   font-size:  20px;
 }
 
 .container table select{
    line-height: 40px;
+   margin:5px;
    font-family:  'Ubuntu', sans-serif;
    font-size:  20px;
 
 }
 .container table input{
    line-height: 40px;
+   margin:5px;
    font-family:  'Ubuntu', sans-serif;
    font-size:  20px;
-
+    width: 25%;
+    min-width: 150px;
+    max-width: 250px;
 }
 
 
