@@ -1,6 +1,6 @@
-var UnitConvertorApp = angular.module('UnitConvertorApp', ['ngRoute']);
-//var UnitConvertorApp = angular.module('UnitConvertorApp', []);
-UnitConvertorApp.config(function($routeProvider) {
+var UnitConverterApp = angular.module('UnitConverterApp', ['ngRoute']);
+//var UnitConverterApp = angular.module('UnitConverterApp', []);
+UnitConverterApp.config(function($routeProvider) {
   $routeProvider.
     when('/', {
       templateUrl: 'welcome.html'
@@ -14,7 +14,7 @@ UnitConvertorApp.config(function($routeProvider) {
     });
 });
 
-UnitConvertorApp.controller('IndexCtrl', function ($scope) {
+UnitConverterApp.controller('IndexCtrl', function ($scope) {
   $scope.UnitTypes = ['Length','Weight', 'Area', 'Volume', 'Speed'];
   $scope.InitClass = function() {
     for(var i=0;i<5;i++) {
@@ -32,7 +32,7 @@ UnitConvertorApp.controller('IndexCtrl', function ($scope) {
 
 
 
-UnitConvertorApp.controller('UnitDetailCtrl', function ($scope, $routeParams, $http){
+UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, $http){
   $scope.unittype=$routeParams.UnitType;
   //console.log($routeParams);
   $('#link-'+$scope.unittype).addClass("selected");
