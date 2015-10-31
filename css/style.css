@@ -87,7 +87,7 @@ footer {
 .container table tr{
     /*line-height: 40px;*/ 
     font-family: 'Ubuntu', sans-serif;
-    font-size:  20px;
+    font-size:  18px;
 /*    width: 100%;*/
 }
 
@@ -96,8 +96,10 @@ footer {
     padding:10px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-family:  'Ubuntu', sans-serif;
-    font-size:  20px;
+    font-size:  18px;
     width: 80%;
     align: ;
 }
@@ -106,6 +108,8 @@ footer {
     padding:10px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-family:  'Ubuntu', sans-serif;
     font-size:  20px;
     width: 80%;
