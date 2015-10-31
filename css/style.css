@@ -85,25 +85,27 @@ footer {
 }
 
 .container table tr{
-   /*line-height: 40px;*/ 
-   font-family: 'Ubuntu', sans-serif;
-   font-size:  20px;
+    /*line-height: 40px;*/ 
+    font-family: 'Ubuntu', sans-serif;
+    font-size:  20px;
 }
 
 .container table select{
-   /*line-height: 40px;*/
-   padding:10px;
-   margin:5px;
-   font-family:  'Ubuntu', sans-serif;
-   font-size:  20px;
-
+    /*line-height: 40px;*/
+    padding:10px;
+    margin:5px;
+    font-family:  'Ubuntu', sans-serif;
+    font-size:  20px;
+    width: 25%;
+    min-width: 150px;
+    max-width: 250px;
 }
 .container table input{
-   /*ine-height: 40px;*/
-   padding:10px;
-   margin:5px;
-   font-family:  'Ubuntu', sans-serif;
-   font-size:  20px;
+    /*ine-height: 40px;*/
+    padding:10px;
+    margin:5px;
+    font-family:  'Ubuntu', sans-serif;
+    font-size:  20px;
     width: 25%;
     min-width: 150px;
     max-width: 250px;
