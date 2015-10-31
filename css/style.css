@@ -92,6 +92,7 @@ footer {
 
 .container table select{
    line-height: 40px;
+   padding:5px;
    margin:5px;
    font-family:  'Ubuntu', sans-serif;
    font-size:  20px;
