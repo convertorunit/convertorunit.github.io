@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+	background-image: url("images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: auto, 100% 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	font-weight: 100;
+	line-height: 200px;
+	text-align: center;
+}
+
+footer {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+	opacity: 0.5;
+	line-height: 50px;
+	text-align: center;
+}
+
+.navigation ul {
+    list-style:none;
+    line-height: 50px;
+    color: #1FC4FA;
+    font-size:16px;
+    text-align: center;
+}
+
+.navigation ul li {
+    display:inline;
+    position: relative; 
+    padding:10px;
+
+ 
+}
+.navigation ul li a{
+    color:  #ffffff;
+    opacity: 0.5;  
+}
+.navigation ul li a:hover {
+    opacity: 1;
+    -webkit-transition:0.25s ease-out;
+}
+
+.navigation ul li a.selected { 
+    opacity: 1;
+}
+
+.container{
+    margin: 0 auto;
+    background-image: url("images/blurred-home-bg.jpg");
+	background-repeat: repeat;
+	background-size: auto, 100% 60%;
+}
+
+.container table{
+    margin: 0 auto;
+}
+
+.container table tr{
+   line-height: 50px;
+   font-family:  'Ubuntu', sans-serif;
+   font-size:  24px;
+
+}
+
+.container table select{
+   line-height: 40px;
+   font-family:  'Ubuntu', sans-serif;
+   font-size:  20px;
+
+}
+.container table input{
+   line-height: 40px;
+   font-family:  'Ubuntu', sans-serif;
+   font-size:  20px;
+
+}
+
+
+
+

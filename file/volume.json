@@ -1,0 +1,22 @@
+[
+  {
+    "unit": "Cubic Meter",
+    "short": "m3",
+    "toStandard": 1
+  },
+  {
+    "unit": "Litre",
+    "short": "l",
+    "toStandard": 0.001
+  },
+  {
+    "unit": "Gallon(US)",
+    "short": "gal(US)",
+    "toStandard": 0.0037854
+  },
+  {
+    "unit": "Gallon(UK)",
+    "short": "gal(UK)",
+    "toStandard": 0.0045461
+  }
+]

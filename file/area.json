@@ -1,0 +1,22 @@
+[
+  {
+    "unit": "Square Meter",
+    "short": "m2",
+    "toStandard": 1
+  },
+  {
+    "unit": "Square Foot",
+    "short": "ft2",
+    "toStandard": 0.092903
+  },
+  {
+    "unit": "Acre",
+    "short": "acre",
+    "toStandard": 4046.85642
+  },
+  {
+    "unit": "Square Kilometer",
+    "short": "km2",
+    "toStandard": 1000000
+  }
+]

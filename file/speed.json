@@ -1,0 +1,22 @@
+[
+  {
+    "unit": "Kilometers/Hour",
+    "short": "km/h",
+    "toStandard": 1
+  },
+  {
+    "unit": "Mlies/Hour",
+    "short": "mph",
+    "toStandard": 1.60934
+  },
+  {
+    "unit": "Meters/Second",
+    "short": "m/s",
+    "toStandard": 3.6
+  },
+  {
+    "unit": "Feet/Second",
+    "short": "ft/s",
+    "toStandard": 1.09728
+  }
+]

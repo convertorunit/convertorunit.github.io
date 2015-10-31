@@ -1,0 +1,42 @@
+[
+  {
+    "unit": "Meter",
+    "short": "m",
+    "toStandard": 1
+  },
+  {
+    "unit": "Foot",
+    "short": "ft",
+    "toStandard": 0.3048
+  },
+  {
+    "unit": "Inch",
+    "short": "in",
+    "toStandard": 0.0254
+  },
+  {
+    "unit": "Mile",
+    "short": "mile",
+    "toStandard": 1609.344
+  },
+  {
+    "unit": "Kilometer",
+    "short": "km",
+    "toStandard": 1000
+  },
+  {
+    "unit": "Yard",
+    "short": "yd",
+    "toStandard": 0.914
+  },
+  {
+    "unit": "Centimeter",
+    "short": "cm",
+    "toStandard": 0.01
+  },
+  {
+    "unit": "Millimeter",
+    "short": "mm",
+    "toStandard": 0.001
+  }
+]

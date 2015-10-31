@@ -1,0 +1,84 @@
+<!-- <h1>{{unittype}}</h1> -->
+<div class="container">
+	<table>
+		<tr >
+			<td>
+				<select ng-model="unitSelected0" 
+						ng-change="unitChange(unitValue0,unitSelected0)"
+						ng-options="unit as unit.unit for unit in units track by unit.unit">
+    			</select>
+			</td>
+			<td>
+				<input type="text" ng-model="unitValue0" ng-change="valueChange(unitValue0,unitSelected0.toStandard)">
+			</td>
+			<td  ng-repeat="unit in units | filter : unitSelected0 : true ">
+          		{{unit.short}}
+			</td>
+		</tr>
+		<tr >
+			<td>
+				<select ng-model="unitSelected1" 
+						ng-change="unitChange(unitValue1,unitSelected1)"
+						ng-options="unit as unit.unit for unit in units track by unit.unit">
+    			</select>
+			</td>
+			<td>
+				<input type="text" ng-model="unitValue1" ng-change="valueChange(unitValue1,unitSelected1.toStandard)">
+			</td>
+			<td  ng-repeat="unit in units | filter : unitSelected1 : true ">
+          		{{unit.short}}
+			</td>
+		</tr>
+		<tr >
+			<td>
+				<select ng-model="unitSelected2" 
+						ng-change="unitChange(unitValue2,unitSelected2)"
+						ng-options="unit as unit.unit for unit in units track by unit.unit">
+    			</select>
+			</td>
+			<td>
+				<input type="text" ng-model="unitValue2" ng-change="valueChange(unitValue2,unitSelected2.toStandard)">
+			</td>
+			<td  ng-repeat="unit in units | filter : unitSelected2 : true ">
+          		{{unit.short}}
+			</td>
+		</tr>
+		<tr >
+			<td>
+				<select ng-model="unitSelected3" 
+						ng-change="unitChange(unitValue3,unitSelected3)"
+						ng-options="unit as unit.unit for unit in units track by unit.unit">
+    			</select>
+			</td>
+			<td>
+				<input type="text" ng-model="unitValue3" ng-change="valueChange(unitValue3,unitSelected3.toStandard)">
+			</td>
+			<td  ng-repeat="unit in units | filter : unitSelected3 : true ">
+          		{{unit.short}}
+			</td>
+		</tr>
+	</table>
+<div>
+<!-- <div>
+	<table>
+		<th>
+			Unit
+		</th>
+		<th>
+			Short Form
+		</th>
+		<th>
+		</th>
+		<tr ng-repeat="unit in units">
+			<td>
+				{{unit.unit}}
+			</td>
+			<td>
+				{{unit.short}}
+			</td>
+			<td>
+				= {{unit.toStandard | number}} m
+			</td>
+		</tr>
+	</table>
+</div> -->

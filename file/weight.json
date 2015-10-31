@@ -1,0 +1,32 @@
+[
+  {
+    "unit": "Kilogram",
+    "short": "kg",
+    "toStandard": 1
+  },
+  {
+    "unit": "Pound",
+    "short": "lb",
+    "toStandard": 0.45359
+  },
+  {
+    "unit": "Ounce",
+    "short": "oz",
+    "toStandard": 0.02835
+  },
+  {
+    "unit": "Gram",
+    "short": "g",
+    "toStandard": 0.001
+  },
+  {
+    "unit": "Tonne",
+    "short": "t",
+    "toStandard": 1000
+  },
+  {
+    "unit": "Carat",
+    "short": "ct",
+    "toStandard": 0.0002
+  }
+]
