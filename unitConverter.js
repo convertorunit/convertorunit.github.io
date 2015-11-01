@@ -32,7 +32,7 @@ UnitConverterApp.controller('IndexCtrl', function ($scope) {
 
 
 
-UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, $http){
+UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, $http, $filter){
   $scope.unittype=$routeParams.UnitType;
   //console.log($routeParams);
   $('#link-'+$scope.unittype).addClass("selected");
@@ -82,39 +82,6 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, $h
   };
   $scope.unit3Change = function(unitValue, newUnit) {
     $scope.value3Change(unitValue, newUnit.toStandard);
-  };
-  $scope.valueFixed= function(unitValue){
-     //console.log($scope.unitValue0);
-     //unitValue=unitValue.toFixed(3);
-     $scope.unitValue0 = unitValue;
-    // $scope.unitValue1 = ($scope.unitValue1).toFixed(3);
-    // $scope.unitValue2 = ($scope.unitValue2).toFixed(3);
-    // $scope.unitValue3 = ($scope.unitValue3).toFixed(3);
-  };
-});
-
-UnitConverterApp.directive('isNumber', function () {
-  return {
-    require: 'ngModel',
-    link: function (scope) {  
-      scope.$watch('unitValue0', function(newValue,oldValue) {
-          var arr = String(newValue).split("");
-          console.log(newValue, oldValue);
-          // if (arr.length === 0) return;
-          // if (arr.length === 1 && (arr[0] == '-' || arr[0] === '.' )) return;
-          // if (arr.length === 2 && newValue === '-.') return;
-          // var countdot=0;
-          // arr.forEach(function(entry) {
-          //     if(entry==='.')
-          //       countdot+=1;
-          // });
-          // if (countdot<2) return;
-          // console.log(countdot);
-          if (isNaN(newValue)) {
-              scope.unitValue0 = oldValue;
-          }
-      });
-    }
   };
 });
 
