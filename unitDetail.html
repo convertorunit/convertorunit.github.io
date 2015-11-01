@@ -1,9 +1,10 @@
 <!-- <h1>{{unittype}}</h1> -->
 <div class="container">
-	<table width="470">
+	<table width="500">
 		<tr >
-			<td width="200">
-				<select ng-model="unitSelected0" 
+			<td width="230">
+				<select dir="rtl"
+						ng-model="unitSelected0" 
 						ng-change="unitChange(unitValue0,unitSelected0)"
 						ng-options="unit as unit.unit for unit in units track by unit.unit">
     			</select>
@@ -17,7 +18,8 @@
 		</tr>
 		<tr >
 			<td>
-				<select ng-model="unitSelected1" 
+				<select dir="rtl"
+						ng-model="unitSelected1" 
 						ng-change="unitChange(unitValue1,unitSelected1)"
 						ng-options="unit as unit.unit for unit in units track by unit.unit">
     			</select>
@@ -31,7 +33,8 @@
 		</tr>
 		<tr >
 			<td>
-				<select ng-model="unitSelected2" 
+				<select dir="rtl"
+						ng-model="unitSelected2" 
 						ng-change="unitChange(unitValue2,unitSelected2)"
 						ng-options="unit as unit.unit for unit in units track by unit.unit">
     			</select>
@@ -45,7 +48,8 @@
 		</tr>
 		<tr >
 			<td>
-				<select ng-model="unitSelected3" 
+				<select dir="rtl"
+						ng-model="unitSelected3" 
 						ng-change="unitChange(unitValue3,unitSelected3)"
 						ng-options="unit as unit.unit for unit in units track by unit.unit">
     			</select>
