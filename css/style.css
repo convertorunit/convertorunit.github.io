@@ -33,6 +33,8 @@ footer {
 }
 
 .navigation ul {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
     list-style:none;
     line-height: 50px;
     min-width: 500px;
