@@ -78,7 +78,7 @@ footer {
     
     margin-right: auto;
     margin-left: auto;
-    padding-top: 30px; 
+    padding-top: 25px; 
 /*    width: 450px;*/
 /*    min-width: 300px;
     max-width: 500px;*/
@@ -87,7 +87,9 @@ footer {
 .container table tr{
     /*line-height: 40px;*/ 
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
     font-size:  18px;
+    color: rgba(22,141,181,0.8);
 /*    width: 100%;*/
 }
 
@@ -103,12 +105,21 @@ footer {
     /*ine-height: 40px;*/
     padding:10px;
     margin: 5px auto;
+    border: solid 3px;
+    border-color: rgba(22,141,181,0.5);
+    transition: border 0.3s;
     font-family:  'Ubuntu', sans-serif;
     font-size:  20px;
+    color: rgb(111,111,111);
+    text-align: right;
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.4) ;
+    background-color: #ffffff;
 }
 
-
+.container table  tr td  input:focus,
+.container table  tr td  input.focus {
+  border: solid 3px;
+  border-color: rgba(22,141,181,1);
+}
 
 
