@@ -99,9 +99,11 @@ footer {
     margin: 5px auto;
     border: none;
     border-color: transparent;
+    background-color: transparent;
     font-family:  'Ubuntu', sans-serif;
+    font-weight: 700;
     font-size:  18px;
-    color: rgba(255,255,255,0.1);
+    color: rgba(22,141,181,0.8);
     width: 90%;
 }
 .container table  tr td  input{
