@@ -93,11 +93,8 @@ footer {
 
 .container table tr td select{
     /*line-height: 40px;*/
-    padding:5px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 3px;
-    margin-bottom: 5px;
+    padding: 10px, 5px;
+    margin: 5px, auto;
     font-family:  'Ubuntu', sans-serif;
     font-size:  18px;
     width: 90%;
@@ -105,10 +102,7 @@ footer {
 .container table  tr td  input{
     /*ine-height: 40px;*/
     padding:10px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px, auto;
     font-family:  'Ubuntu', sans-serif;
     font-size:  20px;
     width: 80%;
