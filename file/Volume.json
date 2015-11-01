@@ -10,12 +10,12 @@
     "toStandard": 0.001
   },
   {
-    "unit": "Gallon(US)",
+    "unit": "Gallon US",
     "short": "gal(US)",
     "toStandard": 0.0037854
   },
   {
-    "unit": "Gallon(UK)",
+    "unit": "Gallon UK",
     "short": "gal(UK)",
     "toStandard": 0.0045461
   }
