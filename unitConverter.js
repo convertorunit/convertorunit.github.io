@@ -42,10 +42,10 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, $h
     $scope.unitSelected1 = data[1];
     $scope.unitSelected2 = data[2];
     $scope.unitSelected3 = data[3];
-    $scope.unitValue0 = (1 / $scope.unitSelected0.toStandard).toFixed(3);
-    $scope.unitValue1 = (1 / $scope.unitSelected1.toStandard).toFixed(3);
-    $scope.unitValue2 = (1 / $scope.unitSelected2.toStandard).toFixed(3);
-    $scope.unitValue3 = (1 / $scope.unitSelected3.toStandard).toFixed(3);
+    $scope.unitValue0 = 1 / $scope.unitSelected0.toStandard;
+    $scope.unitValue1 = 1 / $scope.unitSelected1.toStandard;
+    $scope.unitValue2 = 1 / $scope.unitSelected2.toStandard;
+    $scope.unitValue3 = 1 / $scope.unitSelected3.toStandard;
   });
   $scope.value0Change = function(unitValue, StandardSelected) {
     //$scope.unitValue0 = unitValue * StandardSelected / $scope.unitSelected0.toStandard;
