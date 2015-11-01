@@ -101,7 +101,7 @@ footer {
     border-color: transparent;
     font-family:  'Ubuntu', sans-serif;
     font-size:  18px;
-    color: rgba(22,141,181,0.8);
+    color: rgba(255,255,255,0.1);
     width: 90%;
 }
 .container table  tr td  input{
