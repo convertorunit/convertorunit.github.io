@@ -12,13 +12,13 @@
   	</head>
 	<body ng-app="UnitConverterApp">
 		<h1><strong>Unit</strong> Converter</h1>
-	    <div ng-controller="IndexCtrl" class="navigation">
+	    <nav ng-controller="IndexCtrl">
 	    	<ul>
 				<li  ng-repeat="UnitType in UnitTypes" >
 				<a  id="link-{{UnitType}}" href="#/{{UnitType}}" ng-click="changeUnit(UnitType)">{{UnitType}}</a>
 				</li>
 	    	</ul>
-	    </div>
+	    </nav>
 		<div ng-view>
 		</div>
     	<script src="./unitConverter.js"></script>

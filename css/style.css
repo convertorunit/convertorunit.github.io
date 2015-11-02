@@ -32,7 +32,7 @@ footer {
 	text-align: center;
 }
 
-.navigation ul {
+nav ul {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     list-style:none;
@@ -43,23 +43,23 @@ footer {
     text-align: center;
 }
 
-.navigation ul li {
+nav ul li {
     display:inline;
     position: relative; 
     padding:5px;
     margin:5px;
  
 }
-.navigation ul li a{
+nav ul li a{
     color:  #ffffff;
     opacity: 0.5;  
 }
-.navigation ul li a:hover {
+nav ul li a:hover {
     opacity: 1;
     -webkit-transition:0.25s ease-out;
 }
 
-.navigation ul li a.selected { 
+nav ul li a.selected { 
     opacity: 1;
 }
 
