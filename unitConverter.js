@@ -14,6 +14,8 @@ UnitConverterApp.config(function($routeProvider) {
     });
 });
 
+
+
 UnitConverterApp.controller('IndexCtrl', function ($scope) {
   $scope.UnitTypes = ['Length','Weight', 'Area', 'Volume', 'Speed'];
   $scope.InitClass = function() {
@@ -47,6 +49,13 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, $h
     $scope.unitValue2 = 1 / $scope.unitSelected2.toStandard;
     $scope.unitValue3 = 1 / $scope.unitSelected3.toStandard;
   });
+            // $scope.$watch('unitValue0', function(newValue,oldValue) {
+            //   console.log(newValue, oldValue);
+            //     if (isNaN(newValue)) {
+            //         $scope.unitValue0 = oldValue;
+            //     }
+            // });
+
   $scope.value0Change = function(unitValue, StandardSelected) {
     //$scope.unitValue0 = unitValue * StandardSelected / $scope.unitSelected0.toStandard;
     $scope.unitValue1 = unitValue * StandardSelected / $scope.unitSelected1.toStandard;
@@ -85,4 +94,22 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, $h
   };
 });
 
-
+UnitConverterApp.directive('isNumber', function () {
+    return {
+        require: 'ngModel',
+        link: function (scope) {    
+            scope.$watch('unitValue0', function(newValue,oldValue) {
+              console.log(newValue, oldValue);
+                // var arr = String(newValue).split("");
+                // if (arr.length === 0) return;
+                // if (arr.length === 1 && (arr[0] == '-' || arr[0] === '.' )) return;
+                // if (arr.length === 2 && newValue === '-.') return;
+                if (isNaN(newValue)) {
+                    scope.unitValue0 = oldValue;
+                    StandardSelected=scope.unitSelected0.toStandard;
+                    scope.value0Change(oldValue, StandardSelected);
+                }
+            });
+        }
+    };
+});
