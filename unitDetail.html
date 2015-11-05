@@ -5,7 +5,7 @@
 			<td width="210">
 				<select dir="rtl"
 						ng-model="unitSelected0" 
-						ng-change="unit0Change(unitValue0,unitSelected0)"
+						ng-change="unit0Change(unitValue0,unitSelected0);organizedAllUnitValue()"
 						ng-options="unit as unit.unit for unit in units track by unit.unit">
     			</select>
 			</td >
@@ -24,7 +24,7 @@
 			<td>
 				<select dir="rtl"
 						ng-model="unitSelected1" 
-						ng-change="unit1Change(unitValue1,unitSelected1)"
+						ng-change="unit1Change(unitValue1,unitSelected1);organizedAllUnitValue()"
 						ng-options="unit as unit.unit for unit in units track by unit.unit">
     			</select>
 			</td>
@@ -43,7 +43,7 @@
 			<td>
 				<select dir="rtl"
 						ng-model="unitSelected2" 
-						ng-change="unit2Change(unitValue2,unitSelected2)"
+						ng-change="unit2Change(unitValue2,unitSelected2);organizedAllUnitValue()"
 						ng-options="unit as unit.unit for unit in units track by unit.unit">
     			</select>
 			</td>
@@ -62,7 +62,7 @@
 			<td>
 				<select dir="rtl"
 						ng-model="unitSelected3" 
-						ng-change="unit3Change(unitValue3,unitSelected3)"
+						ng-change="unit3Change(unitValue3,unitSelected3);organizedAllUnitValue()"
 						ng-options="unit as unit.unit for unit in units track by unit.unit">
     			</select>
 			</td>

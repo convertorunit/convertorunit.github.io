@@ -100,7 +100,7 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, un
   $scope.unit1Change = function(unitValue, newUnit) {
     $scope.value1Change(unitValue, newUnit.toStandard);
   };
-  $scope.unit2Change = function(unitValue, newUnit) {scope.
+  $scope.unit2Change = function(unitValue, newUnit) {
     $scope.value2Change(unitValue, newUnit.toStandard);
   };
   $scope.unit3Change = function(unitValue, newUnit) {
@@ -134,7 +134,7 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, un
 
     return array.join("");
   };
-  
+
   $scope.organizedAllUnitValue = function() {
     $scope.unitValue0 = $scope.organizedUnitValue($scope.unitValue0);
     $scope.unitValue1 = $scope.organizedUnitValue($scope.unitValue1);
