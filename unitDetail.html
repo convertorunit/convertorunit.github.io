@@ -13,7 +13,8 @@
 				<input type="text" 
 						is-number
 						ng-model="unitValue0"
-						ng-change="value0Change(unitValue0,unitSelected0.toStandard)" >
+						ng-change="value0Change(unitValue0,unitSelected0.toStandard)"
+						ng-blur="organizedAllUnitValue()" >
 			</td >
 			<td  width="70" ng-repeat="unit in units | filter : unitSelected0 : true ">
           		{{unit.short}}
@@ -31,7 +32,8 @@
 				<input type="text" 
 						is-number
 						ng-model="unitValue1" 
-						ng-change="value1Change(unitValue1,unitSelected1.toStandard)">
+						ng-change="value1Change(unitValue1,unitSelected1.toStandard)"
+						ng-blur="organizedAllUnitValue()" >
 			</td>
 			<td  ng-repeat="unit in units | filter : unitSelected1 : true ">
           		{{unit.short}}
@@ -49,7 +51,8 @@
 				<input type="text" 
 						is-number
 						ng-model="unitValue2" 
-						ng-change="value2Change(unitValue2,unitSelected2.toStandard)">
+						ng-change="value2Change(unitValue2,unitSelected2.toStandard)"
+						ng-blur="organizedAllUnitValue()" >
 			</td>
 			<td  ng-repeat="unit in units | filter : unitSelected2 : true ">
           		{{unit.short}}
@@ -67,7 +70,8 @@
 				<input type="text" 
 						is-number
 						ng-model="unitValue3" 
-						ng-change="value3Change(unitValue3,unitSelected3.toStandard)">
+						ng-change="value3Change(unitValue3,unitSelected3.toStandard)"
+						ng-blur="organizedAllUnitValue()" >
 			</td>
 			<td  ng-repeat="unit in units | filter : unitSelected3 : true ">
           		{{unit.short}}

@@ -56,10 +56,15 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, un
     $scope.unitSelected1 = data[1];
     $scope.unitSelected2 = data[2];
     $scope.unitSelected3 = data[3];
-    $scope.unitValue0 = 1 / $scope.unitSelected0.toStandard;
-    $scope.unitValue1 = 1 / $scope.unitSelected1.toStandard;
-    $scope.unitValue2 = 1 / $scope.unitSelected2.toStandard;
-    $scope.unitValue3 = 1 / $scope.unitSelected3.toStandard;
+    // $scope.unitValue0 = 1 / $scope.unitSelected0.toStandard;
+    // $scope.unitValue1 = 1 / $scope.unitSelected1.toStandard;
+    // $scope.unitValue2 = 1 / $scope.unitSelected2.toStandard;
+    // $scope.unitValue3 = 1 / $scope.unitSelected3.toStandard;
+    $scope.unitValue0 = $scope.organizedUnitValue(1 / $scope.unitSelected0.toStandard);
+    $scope.unitValue1 = $scope.organizedUnitValue(1 / $scope.unitSelected1.toStandard);
+    $scope.unitValue2 = $scope.organizedUnitValue(1 / $scope.unitSelected2.toStandard);
+    $scope.unitValue3 = $scope.organizedUnitValue(1 / $scope.unitSelected3.toStandard);
+
   });
 
   $('#link-'+$scope.unittype).addClass("selected");
@@ -69,6 +74,7 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, un
     $scope.unitValue1 = unitValue * StandardSelected / $scope.unitSelected1.toStandard;
     $scope.unitValue2 = unitValue * StandardSelected / $scope.unitSelected2.toStandard;
     $scope.unitValue3 = unitValue * StandardSelected / $scope.unitSelected3.toStandard;
+    $scope.organizedUnitValue();
   };
   $scope.value1Change = function(unitValue, StandardSelected) {
     $scope.unitValue0 = unitValue * StandardSelected / $scope.unitSelected0.toStandard;
@@ -94,12 +100,49 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, un
   $scope.unit1Change = function(unitValue, newUnit) {
     $scope.value1Change(unitValue, newUnit.toStandard);
   };
-  $scope.unit2Change = function(unitValue, newUnit) {
+  $scope.unit2Change = function(unitValue, newUnit) {scope.
     $scope.value2Change(unitValue, newUnit.toStandard);
   };
   $scope.unit3Change = function(unitValue, newUnit) {
     $scope.value3Change(unitValue, newUnit.toStandard);
   };
+  $scope.organizedUnitValue = function(unitValue) {
+    var array = String(unitValue).split("");    
+    var dotIndex = array.indexOf(".");
+    if (dotIndex > -1 && dotIndex+4<array.length) {
+      for (i = dotIndex+1; i < array.length; i++) { 
+        if(array[i]=="0")
+          dotIndex++;
+        else
+          break;
+      }
+      array.splice(dotIndex+4, array.length-4-dotIndex);
+    }
+
+    dotIndex = array.indexOf(".");
+    if (dotIndex > -1){
+      for (i = array.length-1; i > 0; i--) { 
+        if(array[i]=="0")
+          array.splice(i, 1);
+        else
+          break;
+      }
+    }
+
+    if(array[array.length-1]==".")
+      array.splice(i, 1);
+
+    return array.join("");
+  };
+  
+  $scope.organizedAllUnitValue = function() {
+    $scope.unitValue0 = $scope.organizedUnitValue($scope.unitValue0);
+    $scope.unitValue1 = $scope.organizedUnitValue($scope.unitValue1);
+    $scope.unitValue2 = $scope.organizedUnitValue($scope.unitValue2);
+    $scope.unitValue3 = $scope.organizedUnitValue($scope.unitValue3);
+  };
+
+
 });
 
 UnitConverterApp.directive('isNumber', function () {
@@ -107,8 +150,7 @@ UnitConverterApp.directive('isNumber', function () {
         require: 'ngModel',
         link: function (scope) {    
             scope.$watch('unitValue0', function(newValue,oldValue) {
-              console.log(newValue, oldValue);
-                if (isNaN(newValue)) {
+                if (isNaN(newValue)&&scope.unitSelected0) {
                     scope.unitValue0 = oldValue;
                     StandardSelected=scope.unitSelected0.toStandard;
                     scope.value0Change(oldValue, StandardSelected);
