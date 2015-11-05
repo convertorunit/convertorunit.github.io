@@ -94,7 +94,7 @@ UnitConverterApp.controller('UnitDetailCtrl', function ($scope, $routeParams, un
   $scope.unit1Change = function(unitValue, newUnit) {
     $scope.value1Change(unitValue, newUnit.toStandard);
   };
-  $scope.unit2Change = function(unitValue, newUnit) {scope.
+  $scope.unit2Change = function(unitValue, newUnit) {
     $scope.value2Change(unitValue, newUnit.toStandard);
   };
   $scope.unit3Change = function(unitValue, newUnit) {
@@ -107,7 +107,7 @@ UnitConverterApp.directive('isNumber', function () {
         require: 'ngModel',
         link: function (scope) {    
             scope.$watch('unitValue0', function(newValue,oldValue) {
-              //console.log(newValue, oldValue);
+              console.log(newValue, oldValue);
                 if (isNaN(newValue)) {
                     scope.unitValue0 = oldValue;
                     StandardSelected=scope.unitSelected0.toStandard;
